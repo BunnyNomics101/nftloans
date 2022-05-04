@@ -1,17 +1,13 @@
-import React from 'react';
-import './App.scss';
-import Connect2Phantom from './components/connect-phantom';
+import React from "react";
+import "./App.scss";
+import Container from "./components/container";
+import NavBar from "./components/nav-bar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-        <h1>Select Wallet</h1>
-        <p>My USDC: --</p>
-        <Connect2Phantom/>
-
-      </header>
+      <NavBar />
+      <Container />
     </div>
   );
 }

@@ -72,9 +72,9 @@ const Connect2Phantom: FC = () => {
         <div>
             { walletAvail ?
                 <>
-                <button disabled={connected} onClick={connectHandler}>Connect to Phantom</button>
-                <button disabled={!connected} onClick={disconnectHandler}>Disconnect from Phantom</button>
-                { connected ? <p>Your public key is : {pubKey?.toBase58()}</p> : null }
+                {/* <button disabled={connected} onClick={connectHandler}>Connect to Phantom</button>
+                <button disabled={!connected} onClick={disconnectHandler}>Disconnect from Phantom</button> */}
+                { connected ? <div>Public key: {pubKey?.toBase58()}</div> : null }
                 </>
             :
                 <>
